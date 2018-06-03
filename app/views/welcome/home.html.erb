@@ -1,2 +1,5 @@
 
 <%= link_to "Logout", destroy_user_session_path, method: :delete %>
+
+<%= @user.name %></br>
+<img src="<%= @user.remote_image_url%>" width="200" height="200">

@@ -20,7 +20,6 @@
 
 <body>
     
-<%= link_to "Logout", destroy_user_session_path, method: :delete %>
 <div class="wrapper">   
     <!-- Header part start -->
     <header class="header">
@@ -273,12 +272,11 @@
 
     <!-- Login popup start -->
     <div class="cd-popup" id="login-popup">
-        
         <div class="cd-popup-container">
             <div class="popup-img"><img src="/assets/login-logo.png" alt="Rematch" /></div>
             <div class="social-btn">
                 <a href="#" class="fbLogin">Facebook Login</a>
-                <a href="#" class="googleLogin">Google Login</a>
+                <a href="/users/auth/google_oauth2" class="googleLogin">Google Login</a>
             </div>
             <div class="login-form">
                 <input type="text" placeholder="Email Address" class="uname" />
